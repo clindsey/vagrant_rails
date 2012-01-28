@@ -3,21 +3,21 @@
 Virtualbox is required - https://www.virtualbox.org/
 
 How to get your barebone rails setup working on a Mac
-$ gem install vagrant
-$ vagrant box add base http://files.vagrantup.com/lucid32.box
-$ git clone git://github.com/clindsey/vagrant_rails.git
-$ cd vagrant_rails
-$ vagrant up
+<tt>$ gem install vagrant</tt>
+<tt>$ vagrant box add base http://files.vagrantup.com/lucid32.box</tt>
+<tt>$ git clone git://github.com/clindsey/vagrant_rails.git</tt>
+<tt>$ cd vagrant_rails</tt>
+<tt>$ vagrant up</tt>
 
-Installation will take a while but once it's done you can visit http://localhost:4568/ to see your rails app running.
+Installation will take a while but once it's done you can visit <tt>http://localhost:4568/</tt> to see your rails app running.
 
-Have a look in `vagrant_setup.sh`, there's optional packages that can be installed by uncommenting them.
+Have a look in <tt>vagrant_setup.sh</tt>, there's optional packages that can be installed by uncommenting them.
 
-Stop the vm and apply any changes to `vagrant_setup.sh` with `$ vagrant halt && vagrant up`
+Stop the vm and apply any changes to <tt>vagrant_setup.sh</tt> with <tt>$ vagrant halt && vagrant up</tt>
 
-You can log into the VM using `$ vagrant ssh`.
+You can log into the VM using <tt>$ vagrant ssh</tt>.
 
-The VM's default user is `vagrant` and it's password is `vagrant` incase you need to use `sudo`.
+The VM's default user is <tt>vagrant</tt> and it's password is <tt>vagrant</tt> incase you need to use <tt>sudo</tt>.
 
 == Welcome to Rails
 
