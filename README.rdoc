@@ -22,7 +22,11 @@ Stop the vm and apply any changes to <tt>vagrant_setup.sh</tt> with <tt>$ vagran
 
 You can log into the VM via ssh using <tt>$ vagrant ssh</tt>.
 
+Destroy the VM using <tt>$ vagrant destroy</tt>
+
 The VM's default user is <tt>vagrant</tt> and it's password is <tt>vagrant</tt> incase you need to use <tt>sudo</tt>.
+
+Visit http://vagrantup.com to learn more about vagrant.
 
 == Welcome to Rails
 
