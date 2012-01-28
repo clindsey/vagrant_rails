@@ -1,3 +1,24 @@
+== clindsey's vagrant barebones rails setup
+
+Virtualbox is required - https://www.virtualbox.org/
+
+How to get your barebone rails setup working on a Mac
+$ gem install vagrant
+$ vagrant box add base http://files.vagrantup.com/lucid32.box
+$ git clone git://github.com/clindsey/vagrant_rails.git
+$ cd vagrant_rails
+$ vagrant up
+
+Installation will take a while but once it's done you can visit http://localhost:4568/ to see your rails app running.
+
+Have a look in `vagrant_setup.sh`, there's optional packages that can be installed by uncommenting them.
+
+Stop the vm and apply any changes to `vagrant_setup.sh` with `$ vagrant halt && vagrant up`
+
+You can log into the VM using `$ vagrant ssh`.
+
+The VM's default user is `vagrant` and it's password is `vagrant` incase you need to use `sudo`.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create

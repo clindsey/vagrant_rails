@@ -1,0 +1,29 @@
+#!/usr/bin/vim
+call pathogen#infect()
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+set smartindent
+set showmatch
+set vb t_vb=
+set ruler
+set incsearch 
+set hlsearch
+set virtualedit=all
+colorscheme zenburn
+colors zenburn
+set list
+set number
+syntax on
+set guifont=Monaco\ 12
+set cursorline
+set guioptions=aAce
+set nowrap
+if has("gui_macvim")
+  set transparency=5
+endif
+filetype plugin on
+command! -nargs=1 Silent | execute ':silent !'.<q-args> | execute ':redraw!'
+au BufNewFile,BufRead *.jst set filetype=eruby
+let g:NERDTreeDirArrows=0

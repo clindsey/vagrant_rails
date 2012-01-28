@@ -1,0 +1,5 @@
+export PS1="\[\033[1;30m\]\D{%Y%m%d} \t \[\033[0;36m\]`hostname`\[\033[0m\]:\W $ "
+
+[[ -s "/etc/profile.d/rvm.sh" ]] && source "/etc/profile.d/rvm.sh"
+
+[[ -s "/home/vagrant/nvm/nvm.sh" ]] && . /home/vagrant/.nvm/nvm.sh
